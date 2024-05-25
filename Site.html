@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Images/Imagem.gato.jpg" type="image/x-icon">
+    <title>Gato Burro</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body onresize="verificaLargura()">
+    <header>
+        <nav>
+            <ul class="all">
+                <ul class="links">
+                    <li>
+                        <a href="#">
+                            <img 
+                            class="img_logo" 
+                            src="images/Imagem.gato.jpg" 
+                            alt="Gato Burro">
+                        </a>
+                    </li>
+                    <ul class="links-egeb" id="itens">
+                        <li><a href="#">Saiba Mais</a></li>
+                        <li><a href="#">Dúvidas Comuns</a></li>
+                        <li><a href="#">Ver mais gatos burros</a></li>
+                        <li><a href="#">Doe para o gato burro</a></li>
+                    </ul>
+                </ul>
+                <a href="Site.html" class="material-symbols-outlined" id="burguer" onclick="clickMenu">Menu</a>
+                <ul class="link-sgb">
+                    <li><a href="#">Faça login no site do Gato Burro</a></li>
+                </ul>
+            </ul>
+        </nav>      
+    </header>
+    <section class="main-section">
+        <div>
+            <h1>Página do Gato Burro</h1>
+            <p>
+                Este gato burro pensa que é gente e fica por aí com essa cara de pastel andando em duas patas
+            </p>
+            <li><a href="#">Ajude o Gato burro</a></li>
+        </div>
+        <div class="gatos">
+            <div>
+                <div>
+                    <h2>2º Gaaaaaaaaato Burro</h2>
+                    <p>Este é outro gato burro</p>
+                </div>
+                <div>
+                    <img 
+                    class="img_gatos" 
+                    src="images/imagem.gato2.jpg" 
+                    alt="Gato burro 2"
+                    >
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h2>3ºGato Burroooooooo</h2>
+                    <p>Este é um terceiro gato burro</p>
+                </div>
+                <div>
+                    <img 
+                    class="img_gatos" 
+                    src="images/imagem.gato3.jpg" 
+                    alt="Gato Burro 3"
+                    >
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h2>?Burro Gato¿</h2>
+                    <p>Gato burro, perdi a conta</p>
+                </div>
+                <div>
+                    <img 
+                    class="img_gatos" 
+                    src="images/imagem.gato4" 
+                    alt="Gato Burro 4"
+                    >
+                </div>
+            </div>
+        </div>
+        <div  class="patas">
+            <div>
+                <img src="images/image.gatos.patas" alt="img_patas">
+            </div>
+            <div>
+                <h2>
+                    GATOS BURROS TAMBÉM MERECEM RESPEITO
+                </h2>
+                <h3>
+                    Eles podem não ser bons em nada, darem muitas despesas, arranharem os móveis da casa, mas eles tem um bom coração!
+                </h3>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <ul>
+                <img src="images/Imagem.gato.jpg" alt="img_logo">
+            </ul>
+            <div class="links_footer">
+                <ul>
+                    <li><p class="Header_links">Sobre</p></li>
+                    <li><a href="#">Registro de Alterações</a></li>
+                    <li><a href="#">Experimente</a></li>
+                    <li><a href="#">Prêmios</a></li>
+                    <li><a href="#">Preços</a></li>
+                    <li><a href="#">Faça login ou Cadastre-se</a></li>
+                </ul>
+                <ul>
+                    <li><p class="Header_links">Apoiar</p></li>
+                    <li><a href="#">Imprimir</a></li>
+                    <li><a href="#">Termo de serviço</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Ajuda e Suporte</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function clickMenu(){
+            if(itens.style.display == "block"){
+                itens.style.display = "none"
+            }else{
+                itens.style.display = "block"
+            }
+        }
+        function verificaLargura(){
+            if (window.innerWidth >= 1024) {
+                itens.style.display = "flex"
+            } else {
+                itens.style.display = "none"
+            }
+        }
+    </script>
+</body>
+</html>
